@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2025-10-29T00:00:00.000Z" agent="ChatGPT UML Generator" version="24.7.6" editor="draw.io">
+  <diagram id="useCaseRealEstate" name="Real Estate Use Case Diagram">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="admin" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="owner" value="Owner" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="buyer" value="Buyer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="550" width="40" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="addProperty" value="Add New Property Listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="updateProperty" value="Update Property Listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="deleteProperty" value="Delete Property Listing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="260" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="searchProperty" value="Search Property by Owner" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="listOwners" value="Generate Alphabetical List of Owners" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="420" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="buyerInfo" value="Retrieve Buyer Information" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="propertyBuyers" value="Display Interested Buyers" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="580" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="saveLoad" value="Save & Load Data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="660" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1" edge="1" source="admin" target="addProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r2" edge="1" source="owner" target="addProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r3" edge="1" source="admin" target="updateProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r4" edge="1" source="owner" target="updateProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r5" edge="1" source="admin" target="deleteProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r6" edge="1" source="admin" target="searchProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r7" edge="1" source="owner" target="searchProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r8" edge="1" source="buyer" target="searchProperty" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r9" edge="1" source="admin" target="listOwners" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r10" edge="1" source="admin" target="buyerInfo" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r11" edge="1" source="buyer" target="buyerInfo" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r12" edge="1" source="admin" target="propertyBuyers" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r13" edge="1" source="owner" target="propertyBuyers" style="endArrow=none;html=1;" parent="1"/>
+        <mxCell id="r14" edge="1" source="admin" target="saveLoad" style="endArrow=none;html=1;" parent="1"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
