@@ -1,0 +1,21 @@
+Category,Name,Price
+Pizza Base,Thin Crust,2.50
+Pizza Base,Thick Crust,3.00
+Pizza Base,Cheese Burst Crust,4.00
+
+Sauce,Tomato Sauce,1.50
+Sauce,Pesto Sauce,2.00
+Sauce,Alfredo Sauce,2.00
+
+Topping,Mushrooms,1.00
+Topping,Spinach,1.00
+Topping,Jalapenos,1.00
+Topping,Cherry Tomatoes,1.50
+Topping,Green Peppers,1.00
+Topping,Black Olives,1.50
+
+Additional Ingredient,Pepperoni,2.00
+Additional Ingredient,Grilled Chicken,3.00
+Additional Ingredient,Smoked Chicken,3.00
+Additional Ingredient,Artichoke Hearts,2.00
+Additional Ingredient,Extra Cheese,2.00

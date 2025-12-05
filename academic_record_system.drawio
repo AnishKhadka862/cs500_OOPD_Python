@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net">
+  <diagram name="UML Class Diagram">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="class0" value="&lt;&lt;class&gt;&gt;
+Student
+---
+studentId: int
+name: str
+program: str
+---
+addScore()
+getAverage()" style="shape=rectangle;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="class1" value="&lt;&lt;class&gt;&gt;
+Course
+---
+courseId: str
+courseName: str
+professor: str
+---
+addStudent()
+getStats()" style="shape=rectangle;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="class2" value="&lt;&lt;class&gt;&gt;
+Score
+---
+studentId: int
+courseId: str
+scores: list[int]
+---
+getHighest()
+getAverage()" style="shape=rectangle;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="200" height="120" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Use Case Diagram">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="actor" value="Actor
+(Record Staff)" style="shape=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="70" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc0" value="Add Student" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="60" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc1" value="Add Course" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="150" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc2" value="Enter Scores" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="240" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc3" value="View Students &amp; Scores" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="330" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc4" value="Calculate Highest Score" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="180" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc5" value="Calculate Average Score" style="ellipse;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="510" width="180" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

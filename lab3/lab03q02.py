@@ -1,68 +1,82 @@
-MIN_SCORE = 0
-MAX_SCORE = 10
+def get_smallest(lst):
+    smallest = lst[0]
+    for num in lst:
+        if num < smallest:
+            smallest = num
+    return smallest
 
-# Get a list of scores from the keyboard
-def get_score_list():
-    while True:
-        try:
-            scores = list(map(int, input(f"Enter scores between {MIN_SCORE} and {MAX_SCORE}, separated by spaces: ").split()))
-            # validate scores
-            if all(MIN_SCORE <= s <= MAX_SCORE for s in scores):
-                return scores
-            else:
-                print(f"All scores must be between {MIN_SCORE} and {MAX_SCORE}. Try again.")
-        except ValueError:
-            print("Please enter only integers separated by spaces.")
 
-# Find the smallest, largest, sum, average and mode
-def process_scores(score_list):
-    if not score_list:
-        return None, None, 0, 0, None
+def get_largest(lst):
+    largest = lst[0]
+    for num in lst:
+        if num > largest:
+            largest = num
+    return largest
 
-    smallest = min(score_list)
-    largest = max(score_list)
-    total = sum(score_list)
-    average = total / len(score_list)
-    mode = max(set(score_list), key=score_list.count)
 
-    return smallest, largest, total, average, mode
+def get_sum(lst):
+    total = 0
+    for num in lst:
+        total += num
+    return total
 
-def show_menu():
-    print("\n=== MENU ===")
-    print("1. Find the smallest score")
-    print("2. Find the largest score")
-    print("3. Find the total of scores")
-    print("4. Find the average score")
-    print("5. Find the mode (most frequent) score")
-    print("6. Exit")
 
-def main():
-    print("Finding the smallest, largest, sum, average or mode")
+def get_average(lst):
+    return get_sum(lst) / len(lst)
 
-    score_list = get_score_list()
-    sm, lg, total, average, mode = process_scores(score_list)
 
-    while True:
-        show_menu()
-        try:
-            choice = int(input("Enter your choice: "))
-            if choice == 1:
-                print("The smallest score is", sm)
-            elif choice == 2:
-                print("The largest score is", lg)
-            elif choice == 3:
-                print("The total of scores is", total)
-            elif choice == 4:
-                print("The average score is", f"{average:.2f}")
-            elif choice == 5:
-                print("The mode (most frequent) score is", mode)
-            elif choice == 6:
-                print("Bye")
-                break
-            else:
-                print("Invalid choice. Please try again.")
-        except ValueError:
-            print("Please enter a valid number.")
+def get_mode(lst):
+    # Build frequency array
+    # Since scores are unknown, find max value
+    max_val = lst[0]
+    for n in lst:
+        if n > max_val:
+            max_val = n
 
-if __name__ == "__main__":
-    main()
+    freq = [0] * (max_val + 1)
+
+    for n in lst:
+        freq[n] += 1
+
+    # Find the most frequent
+    mode = 0
+    highest_count = freq[0]
+
+    for i in range(len(freq)):
+        if freq[i] > highest_count:
+            highest_count = freq[i]
+            mode = i
+
+    return mode
+
+
+def menu():
+    scores = []
+    count = int(input("How many scores? "))
+
+    for _ in range(count):
+        scores.append(int(input("Enter score: ")))
+
+    print("\n1. Smallest")
+    print("2. Largest")
+    print("3. Sum")
+    print("4. Average")
+    print("5. Mode")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        print("Smallest =", get_smallest(scores))
+    elif choice == 2:
+        print("Largest =", get_largest(scores))
+    elif choice == 3:
+        print("Sum =", get_sum(scores))
+    elif choice == 4:
+        print("Average =", get_average(scores))
+    elif choice == 5:
+        print("Mode =", get_mode(scores))
+    else:
+        print("ERROR: Invalid choice")
+
+
+menu()
