@@ -1,0 +1,25 @@
+<mxfile><diagram name="ClassDiagram"><mxGraphModel><root>
+<mxCell id="0"/><mxCell id="1" parent="0"/>
+
+<!-- Student -->
+<mxCell id="Student" value="Student" style="swimlane" vertex="1" parent="1">
+  <mxGeometry x="50" y="50" width="180" height="180" as="geometry"/>
+</mxCell>
+
+<!-- Course -->
+<mxCell id="Course" value="Course" style="swimlane" vertex="1" parent="1">
+  <mxGeometry x="300" y="50" width="180" height="160" as="geometry"/>
+</mxCell>
+
+<!-- Enrollment -->
+<mxCell id="Enrollment" value="Enrollment" style="swimlane" vertex="1" parent="1">
+  <mxGeometry x="170" y="300" width="200" height="160" as="geometry"/>
+</mxCell>
+
+<!-- Composition Student-Enrollment -->
+<mxCell id="SE" edge="1" source="Enrollment" target="Student"
+ value="" style="endArrow=none;startArrow=diamondThin;startFill=1"/>
+<!-- Composition Course-Enrollment -->
+<mxCell id="CE" edge="1" source="Enrollment" target="Course"
+ value="" style="endArrow=none;startArrow=diamondThin;startFill=1"/>
+</root></mxGraphModel></diagram></mxfile>

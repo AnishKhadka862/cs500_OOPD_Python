@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net" modified="2025-12-11T12:00:00.000Z" agent="5.0" version="24.7.3" type="device">
+  <diagram id="u1" name="Use Case Diagram">
+    <mxGraphModel dx="827" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Actor -->
+        <mxCell id="actor1" value="Record Staff" style="shape=umlActor;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="60" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases -->
+        <mxCell id="uc1" value="Add New Student" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc2" value="Add New Course" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc3" value="Enter Student Scores" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc4" value="View Students & Scores" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="380" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc5" value="Calculate Highest Score" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="500" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc6" value="Calculate Average Score" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="600" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc7" value="Generate Additional Statistics" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="700" width="230" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="edge1" edge="1" parent="1" source="actor1" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge2" edge="1" parent="1" source="actor1" target="uc2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge3" edge="1" parent="1" source="actor1" target="uc3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge4" edge="1" parent="1" source="actor1" target="uc4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge5" edge="1" parent="1" source="actor1" target="uc5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge6" edge="1" parent="1" source="actor1" target="uc6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge7" edge="1" parent="1" source="actor1" target="uc7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
